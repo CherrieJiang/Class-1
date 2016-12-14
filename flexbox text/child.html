@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox test child</title>
+	<style>
+.parent{
+	background: yellow;
+}
+.child{
+	margin:10px;
+	padding:10px;
+	background:white;
+	text-align:center;
+	color: grey;
+	overflow:hidden; 
+}
+.parent.flex{
+	display: flex;
+}
+
+.child.order-negative-1{
+      order:-1;
+}
+.child.order-positive-1{
+	  order:1;
+}
+
+/* order值越小越靠前，默认值0 */
+
+.child.flex-grow-1{
+	flex-grow: 1
+}
+
+.child.flex-grow-2{
+	flex-grow: 2
+}
+
+/* grow 是对子元素内容之外，剩余空间的按你规定的大小比例分配 */
+
+.child.flex-shrink-0{
+	flex-shrink: 0;
+}
+
+/* 设置过的child尺寸被固定*/
+
+.child.flex-basis-0{
+	flex-basis: 0;
+}
+
+</style>
+</head>
+<body>
+<h2>order</h2>
+<div class="parent flex">
+    <div class="child order-positive-1"> child 1 </div>
+    <div class="child">child</div>
+    <div class="child order-negative-1">child -1</div>
+</div>
+
+<h2>flex-grow:1</h2>
+<div class="parent flex">
+<div class="child">normal</div>
+<div class="child flex-grow-1">flex-grow-1</div>
+<div class="child flex-grow-1">flex-grow-1</div>
+</div>
+
+<h2>flex-grow:0/1/2</h2>
+<div class="parent flex">
+<div class="child">normal</div>
+<div class="child flex-grow-1">flex-grow-1</div>
+<div class="child flex-grow-2">flex-grow-2</div>
+</div>
+
+<h2>flex-grow: rest space</h2>
+<div class="parent flex">
+<div class="child flex-grow-1">flex-grow-1</div>
+<div class="child flex-grow-1">flex-grow-1,loooooooooog</div>
+<div class="child flex-grow-1">flex-grow-1</div>
+</div>
+
+<h2>flex-shrink</h2>
+<div class="parent flex">
+    <div class="child">default</div>
+    <div class="child flex-grow-1">flex-grow: 1</div>
+    <div class="child" style="width: 300px;">width: 300px</div>
+</div>
+
+<h2>设置了flex-shrink: 0的子元素，会保持其设定宽度不会收缩</h2>
+<div class="parent flex">
+    <div class="child">default</div>
+    <div class="child flex-grow-1">flex-grow: 1</div>
+    <div class="child flex-shrink-0" style="width: 300px;">flex-shrink: 0</div>
+</div>
+
+
+	
+</div>
+</body>
+</html>

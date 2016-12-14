@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flexbox test</title>
+<style>
+.parent{
+	background: yellow;
+}
+.child{
+	margin:10px;
+	padding:10px;
+	background:white;
+	text-align:center;
+	color: grey;
+	overflow:hidden; 
+}
+
+.parent.flex{
+	display: flex;
+}
+.parent.inline-flex{
+	display:inline-flex;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<h2>display:flex</h2>
+<div class="parent flex">
+    <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="300" height="300"></a>
+    </div>
+     
+     <div class="child">
+      abc
+     </div>
+    
+    <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="300" height="300"></a>
+    </div>
+
+     <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="30" height="30"></a>
+    </div>
+</div>
+<span style="background: wheat">lalala</span>
+
+<h2>dispaly:incline-flex</h2>
+<div class="parent inline-flex">
+    <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="100" height="100"></a>
+    </div>
+    
+     <div class="child">
+     abc
+     </div>
+
+     <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="100" height="100"></a>
+    </div>
+
+     <div class="child">
+	<a href="../works/I read everything I had With My Way.html"><img src="../pic/1.jpg" width="100" height="100"></a>
+    </div>
+</div>
+<span style="background: wheat">lalala</span>
+
+</body>
+</html>

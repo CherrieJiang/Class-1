@@ -23,7 +23,7 @@
 	      	padding: 15px;
 	      	top: 8px;
 	      	left: 65px;
-	      	width: 870px;
+	      	width: 800px;
 	      	height: 30px;
 	        background-color: yellow;
 
@@ -43,16 +43,41 @@
 
           }
           
-          section{max-width: 1227px; min-width:1227px;}
-          body{max-width:1347px;min-width:1347px}
-
-          table {border-collapse: collapse;}
-          table, td, th {border: 2px solid white}
+          section{max-width: 980px; min-width:980px;}
+          body{min-width:1100px;max-width:1100px}
          
-          td {padding: 8px }
-          th {background-color: #CAFF70}
 
-          .th_style{font-size: 18px} 
+    
+    .parent{
+  background: #54FF9F;
+    
+    }
+    
+    .child{
+  margin:2px 3px;
+  padding:13px 15px;
+  background:#9AFF9A;
+  
+    }
+    
+    .child2{
+      margin:2px 1px;
+      padding:13px 15px;
+      background:#54FF9F;
+      text-align:center;
+      color:white;
+      font-size: 17px;
+      flex-shrink: 0;
+
+
+
+    }
+
+   .parent.inline-flex{
+    display:inline-flex;
+    flex-direction:row;
+   
+    } 
 
          </style>
 </head>
@@ -61,9 +86,7 @@
 <div class="whole">
 
 <div class="menu">
-    <div class="menu_link">
-    <a href="Face.html">///</a>
-    </div>
+    
 	<div class='menu_link'>
 	<a href="Index.html">/ Home</a>
 	</div>
@@ -93,7 +116,7 @@
      </style>
 <div class="selfi">
 
-<img id=aa src="pic/self.jpg" width="600" height="600">
+<img id=aa src="pic/self.jpg" width="500" height="500">
       <style type="text/css">
 	     #aa{display:block;position:center;margin:auto}
       </style>
@@ -113,50 +136,129 @@
          </style>
      </h2>
 <br/>
-<table cellpadding="18" bgcolor="#9AFF9A" >
-<tr>
-	<td><a href="works/I read everything I had With My Way.html"><img src="pic/1.jpg"></a></td>
-	<td><a href="works/Best years.html"><img src="pic/2.jpg"></a></td>
-	<td><a href="works/Mao.html"><img src="pic/3.jpg"></a></td>
-</tr>
-<tr class="th_style">
-	<th>
-	I Read Everything I Had by My Way
-	</th>
-	<th>Best Years</th>
-	<th>"Mao"</th>
-</tr>
-<tr>
-    <td><a href="works/Dwelling.html"><img src="pic/4.jpg"></a></td>
-    <td><a href="works/Every color.html"><img src="pic/5.jpg"></a></td>
-    <td><a href="works/da.html"><img src="pic/6.jpg"></a></td>
-</tr>
-<tr class="th_style">
-    <th>Dwelling in the Fuchun Mountains</th>
-    <th>Every Color Every Words</th>
-	<th>Da Ramuccio</th>
-</tr>
-<tr>
-    <td><a href="works/taste.html"><img src="pic/7.jpg"></a></td>  
-    <td><a href="works/know.html"><img src="pic/8.jpg"></a></td> 
-    <td><a href="works/365.html"><img src="pic/9.jpg"></a></td>
-</tr>
-<tr class="th_style">
-	<th>Taste Happinness</th>
-	<th>Do You Know This Color?</th>
-	<th>Three Six Five</th>
-</tr>
-<tr>
-	<td><a href="works/dazhong.html"><img src="pic/10.jpg"></a></td>
-	<td><a href="works/painting.html"><img src="pic/11.jpg"></a></td>
-	
-</tr>
-<tr class="th_style">
-	<th>Da Zhong Dian Ying</th>
-	<th>Painting</th>
-</tr>
-</table>
-<br/><br/>
+    
+    <div class="parent inline-flex">
+    
+    <div class="child">
+    <a href="works/I read everything I had With My Way.html"><img src="pic/1.jpg" width="260" height="260"></a>
+    </div>
+
+    <div class="child">
+    <a href="works/Best years.html"><img src="pic/2.jpg" width="260" height="260"></a>
+    </div>
+ 
+    <div class="child">
+ 	  <a href="works/Mao.html"><img src="pic/3.jpg" width="260" height="260"></a>
+    </div>
+
+    </div>
+
+
+    
+    <div class="parent inline-flex">
+
+    <div class="child2" style="width: 270px;">
+	  I Read Everything I Had by My Way
+	  </div>
+
+    <div class="child2" style="width: 240px;">
+	  Best Years
+    </div>
+    
+    <div class="child2" style="width: 290px;">
+	  "Mao"
+    </div>
+    </div>
+
+    <div class="parent inline-flex">
+    
+    <div class="child">
+    <a href="works/Dwelling.html"><img src="pic/4.jpg" width="260" height="260"></a>
+    </div>
+
+    <div class="child">
+    <a href="works/Every color.html"><img src="pic/5.jpg" width="260" height="260"></a>
+    </div>
+
+    <div class="child">
+    <a href="works/da.html"><img src="pic/6.jpg" width="260" height="260"></a>
+    </div>
+    
+    </div>
+
+    <div class="parent inline-flex">
+    
+    <div class="child2" style="width: 280px;">
+    Dwelling in the Fuchun Mountains
+    </div>
+    
+    <div class="child2" style="width: 240px;">
+    Every Color Every Words
+    </div>
+
+	  <div class="child2" style="width: 280px;">
+    Da Ramuccio
+    </div>
+
+    </div>
+    
+    <div class="parent inline-flex">
+    
+    <div class="child">
+    <a href="works/taste.html"><img src="pic/7.jpg" width="260" height="260"></a>
+    </div>
+    
+    <div class="child">
+    <a href="works/know.html"><img src="pic/8.jpg" width="260" height="260"></a>
+    </div>
+    
+    <div class="child">
+    <a href="works/365.html"><img src="pic/9.jpg" width="260" height="260"></a>
+    </div>
+
+    </div>
+
+   <div class="parent inline-flex">
+    
+    <div class="child2" style="width: 280px;">
+    Taste Happinness
+    </div>
+    
+    <div class="child2" style="width: 240px;">
+	  Do You Know This Color?
+    </div>
+
+    <div class="child2" style="width: 280px;">
+	   Three Six Five
+    </div>
+
+    </div>
+
+    <div class="parent inline-flex">
+    
+    <div class="child">
+	  <a href="works/dazhong.html"><img src="pic/10.jpg" width="260" height="260"></a>
+    </div>
+    
+    <div class="child">
+	  <a href="works/painting.html"><img src="pic/11.jpg" width="260" height="260"></a>
+    </div>
+
+   </div>
+
+   <div class="parent inline-flex">
+    
+    <div class="child2" style="width: 280px;">
+    Da Zhong Dian Ying
+    </div>
+
+    <div class="child2" style="width: 240px;">
+    Painting
+    </div>
+    
+    </div>
+    <br/>
+
 </div>
     
 </section>
@@ -171,16 +273,29 @@
 	      h3{font-size:50px}
          </style>
 <br/>
-         <table border="0" cellpadding="18" bgcolor="#9AFF9A">
-         <tr>
-         <td><a href="exhibitions/beijing.html"><img src="pic/12.jpg"></a></td>
-         <td><a href="exhibitions/nozuo.html"><img src="pic/13.jpg"></a></td>
-         </tr>
-         <tr class="th_style">
-         	<th>Beijing Design Week - Baitasi</th>
-         	<th>No Zuo No Design</th>
-         </tr>
-     </table>
+         <div class="parent inline-flex">
+    
+         <div class="child">
+         <a href="exhibitions/beijing.html"><img src="pic/12.jpg" width="260" height="260"></a>
+         </div>
+
+        
+        <div class="child">
+        <a href="exhibitions/nozuo.html"><img src="pic/13.jpg" width="260" height="260"></a>
+        </div>
+        
+        </div>
+
+        <div class="parent inline-flex">
+    
+        <div class="child2" style="width: 280px;">
+        Beijing Design Week - Baitasi
+        </div>
+        
+        <div class="child2" style="width: 240px;">
+        No Zuo No Design
+        </div>
+       </div>
 <br/><br/>    
 </div>
 </section>
@@ -212,7 +327,7 @@ p{font-size: 20px}
 </section>
 
 <br/>
-<address align="center">- Created By Cherrie Jiang -</br><br/>- 09 / 2016 -</address>
+<center><address>- Created By Cherrie Jiang -</br><br/>- 09 / 2016 -</address></center>
 <br/>
 </div>
 </body>

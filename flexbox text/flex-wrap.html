@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox test</title>
+	<style>
+.parent{
+	background: yellow;
+}
+.child{
+	margin:10px;
+	padding:10px;
+	background:white;
+	text-align:center;
+	color: grey;
+	overflow:hidden; 
+}
+
+.parent.flex{
+	display: flex;
+}
+.parent.flex-wrap{
+	flex-wrap: wrap;
+
+}
+/* nowrap | wrap-reverse*/
+</style>
+</head>
+<body>
+<h2> flex-wrap nowrap-默认值</h2>
+<div class="parent flex">
+    <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+</div>
+
+<h2> flex-wrap:wrap</h2>
+<div class="parent flex flex-wrap">
+    <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+</div>
+
+<h2> flex-wrap+flex-direction:row</h2>
+<div class="parent flex flex-wrap" style="flex-direction: row-reverse;">
+    <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+     <div class="child">child</div>
+</div>
+<span style="background: wheat">
+	!!!!!!!!
+    flex-flow:row wrap = flex-wrap+flex-direction:row
+</span>
+</body>
+</html>
